@@ -17,8 +17,18 @@
 <body>
  <div class="grid-container">
   <nav class="menu" data-menu="suave">
-    <ul>
+    <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <ul data-menu="list" id="menu">
       <li><a href="#animais">Animais</a></li>
+        <li data-dropdown>
+          <a href="sobre.html">Sobre</a>
+          <ul class="dropdown-menu">
+            <li><a href="empresa.html">A Empresa</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="socios.html">Sócios</a></li>
+            <li><a href="investidores.html">Investidores</a></li>
+          </ul>
+        </li>
       <li><a href="#faq">FAQ </a></li>
       <li><a href="#contato">Contato</a></li>
       <li><a data-modal="abrir" href="login.html">Login →</a></li>
@@ -114,7 +124,7 @@
     <h1 class="titulo">FAQ</h1>
     <dl class="faq-lista" data-anime="accordion">
       <dt>Qual a idade dos animais?</dt>
-      <dd> <strong>Raposa</strong> entre 3-10 anos, <strong>Urso</strong> entre 25-50 anos, <strong>Esquilos</strong> entre 3-10 anos, <strong>Lobos</strong> em média 15 anos, <strong>Babuíno</strong> 30 anos, <strong>Leão</strong> 15 anos na natureza e 25 ano em cativeiro.
+      <dd>Raposa 3 à 10 anos, Urso 25 à 50 anos, Esquilos 3 à 10 anos, Lobos em média 15 anos, Babuíno 30 anos e Leão 15 à 25 anos.
       </dd>
       <dt>Eles são fantásticos?</dt>
       <dd>São animais incrivéis de diferentes tipo do reino animalia.</dd>
@@ -128,7 +138,7 @@
 
     <section class="grid-section contato" data-anime="scroll" id="contato">
       <h1 class="titulo">Contato</h1>
-      <div class="mapa">
+      <div class="mapa" data-tooltip aria-label="Endereço próximo ao estacionamento.">
         <img src="./img/Localização.PNG" alt="">
       </div>
       <ul class="dados">
